@@ -11,6 +11,6 @@ This portfolio showcases my projects, experiments, and contributions across vari
 Each repository includes clear documentation, a README, and comments to help you explore the code. I'm always learning, experimenting, and open to collaboration.
 
 📫 **Let’s connect**:
-linkedin.com/in/дамир-сметов-48b1a7360 • @damirsmetov486@gmail.com
+linkedin.com/in/дамир-сметов-48b1a7360 • damirsmetov486@gmail.com
 
 ---
