@@ -1,11 +1,11 @@
-🛍️ Full-Stack Online Shop
+🛍️ **Full-Stack Online Shop**
 
 
 A powerful, full-featured e-commerce web application developed with Angular, TypeScript, and Django, offering a seamless blend of modern design and functional depth.
 
 
 
-🚀 Features
+🚀 **Features**
 
 
 🔐 User Authentication
@@ -24,16 +24,16 @@ Fully optimized for desktop, tablet, and mobile devices
 Real-time data interaction using RESTful APIs
 
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
-Frontend: Angular, TypeScript
+*Frontend: Angular, TypeScript
 
-Backend: Django, Django REST Framework
+*Backend: Django, Django REST Framework
 
-API Communication: JSON-based REST APIs
+*API Communication: JSON-based REST APIs
 
 
-📌 Highlights
+📌 **Highlights**
 
 Clean, modular architecture for scalability
 
@@ -42,7 +42,7 @@ Emphasis on user experience and performance
 Easily extendable for real-world retail applications
 
 
-📸 Screenshots
+📸 **Screenshots**
 
 🖼️ Overview
 
