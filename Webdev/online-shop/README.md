@@ -1,4 +1,5 @@
 🛍️ Full-Stack Online Shop
+
 A powerful, full-featured e-commerce web application developed with Angular, TypeScript, and Django, offering a seamless blend of modern design and functional depth.
 
 🚀 Features
