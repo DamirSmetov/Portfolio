@@ -42,4 +42,4 @@ Mapty-architecture-final.png – Visual diagram of the app's structure and logic
 
 📸 Preview
 
-![image](https://github.com/user-attachments/assets/3205b91a-b208-45c0-ad49-b98b1d73cca6)
+![image](https://github.com/user-attachments/assets/0b25e3aa-51d0-440d-bcc0-798f1704ac65)
