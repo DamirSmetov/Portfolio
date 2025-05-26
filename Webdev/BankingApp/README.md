@@ -16,4 +16,3 @@ Enhanced with interactive elements such as:
 
 ⚡ Dynamic content rendering
 
-Designed to deliver a seamless, responsive, and intuitive experience across all devices.
