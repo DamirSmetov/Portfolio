@@ -1,0 +1,55 @@
+<div class="product-container">
+  <div class="image-section">
+    <div class="main-image">
+      <div
+        *ngFor="let image of product_selected.images; let i = index"
+        [ngStyle]="{ 'background-image': 'url(' + image + ')' }"
+        class="zoom-box"
+        (mousemove)="zoomImage($event, i)"
+        (mouseleave)="resetZoom(i)"
+        #zoomBox
+      ></div>
+    </div>
+  </div>
+  <div class="right-part">
+    <div class="details-section">
+      <p>{{ product_selected.type_sport }}</p>
+      <h1>{{ product_selected.name }}</h1>
+      <h2>{{ "$" + product_selected.price }}</h2>
+      <p>{{ product_selected.description }}</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="recomendations">
+      <h1>You may also like</h1>
+      <div class="scroller-wrapper" (mouseenter)="on()" (mouseleave)="out()">
+        <button
+          *ngIf="hoover == true"
+          class="scroll-btn left"
+          (click)="scrollLeft()"
+        >
+          &#8592;
+        </button>
+
+        <div class="scroller" #scrollContainer>
+          <div
+            class="product-card"
+            *ngFor="let product of recomendations"
+            [routerLink]="['/', product.type_sport, product.name]"
+            [queryParams]="{ id: product.id }"
+          >
+            <img [src]="product.main_image" />
+            <div class="price">${{ product.price }}</div>
+            <div class="name">{{ product.name }}</div>
+          </div>
+        </div>
+        <button
+          *ngIf="hoover == true"
+          class="scroll-btn right"
+          (click)="scrollRight()"
+        >
+          &#8594;
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

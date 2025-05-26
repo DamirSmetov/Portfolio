@@ -1,0 +1,32 @@
+<div
+  class="card"
+  [routerLink]="['/', product.type_sport, product.name]"
+  [queryParams]="{ id: product.id }"
+  (mouseover)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+>
+  <img
+    class="main-image"
+    id="mainImage"
+    src="{{ product.main_image }}"
+    alt="Main Product"
+  />
+
+  <div class="thumbnail-container" *ngIf="hoover == true">
+    <img
+      *ngFor="let image of product.images"
+      src="{{ image }}"
+      alt="Thumbnail"
+      class="thumb"
+      data-src="{{ image }}"
+      (mouseover)="changeImage(image)"
+      (mouseleave)="defaultimage()"
+    />
+  </div>
+
+  <div class="card-content">
+    <div class="price">{{ product.price + "$" }}</div>
+    <div class="title">{{ product.name }}</div>
+    <div class="details">{{ product.type_sport }}<br /></div>
+  </div>
+</div>
