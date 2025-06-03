@@ -1,0 +1,869 @@
+{
+	"info": {
+		"_postman_id": "7bf180ec-257f-4d93-9557-82bcb5ca3948",
+		"name": "online-shop API",
+		"description": "This is a sample API documentation for Online-Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40879403"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "show_products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Get Products\n\nThis endpoint makes an HTTP GET request to retrieve a list of products.\n\n### Request Description\n\n- Method: GET\n    \n- URL: [http://127.0.0.1:8000/api/products/](http://127.0.0.1:8000/api/products/)\n    \n\n### Response\n\n- Status Code: 200\n    \n- Content Type: application/json"
+					},
+					"response": [
+						{
+							"name": "product_list_sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 13:26:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10376"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Adizero ZG Spikeless Golf Shoes\",\n        \"description\": \"Spikeless golf shoes made in part with a blend of recycled and renewable materials.\\\\r\\\\nChase your low score with these Adizero ZG Spikeless Golf Shoes from adidas. Lightweight yet packed with tech, they feature ultralight Lightstrike Pro cushioning to support focused play, and a dynamic stability system for confident footing on greens and fairways. The waterproof upper keeps your feet dry in damp conditions.\",\n        \"price\": \"180.00\",\n        \"category\": 2,\n        \"main_image\": \"https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/b9e107f5ef3543a08cf0905c0f769416_9366/adizero-zg-spikeless-golf-shoes.jpg\",\n        \"type_sport\": \"Golf\",\n        \"images\": [\n            \"https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/b9e107f5ef3543a08cf0905c0f769416_9366/adizero-zg-spikeless-golf-shoes.jpg\",\n            \"https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/837ff847e296461d834fdfa2e56bb45e_9366/adizero-zg-spikeless-golf-shoes.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/77166746c0654436a2489a5ee7e97f43_9366/Adizero_ZG_Spikeless_Golf_Shoes_Grey_JI0861_04_standard.jpg\"\n        ],\n        \"quantity\": 4,\n        \"is_active\": false\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Erling Haaland Boots & Kit\",\n        \"description\": \"Erling Haaland is inevitable. His goal-scoring force of nature inspired the design of these player-edition boots, with supernovas and meteors crashing into the graphics. Combined with sticky NikeSkin technology, the Phantom GX 2 Academy gives you the precision you need to find the back of the net.\",\n        \"price\": \"300.00\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baa3702e-8def-47bc-99f0-bec2f8baa56e/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baa3702e-8def-47bc-99f0-bec2f8baa56e/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/ff06adc9-4e4f-44b0-a308-9c535f55118c/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/6ff07ae0-45a9-40ea-9cce-e429d275df37/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c9ba19c-6eae-4bb5-a306-579c37c963df/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Nike Mercurial Superfly 10 Elite\",\n        \"description\": \"Obsessed with speed? So are the game's biggest stars. That's why we made this Elite boot with an improved 3/4-length Air Zoom unit. It gives you and the sport's fastest players the propulsive feel needed to break through the back line. The result is the most responsive Mercurial we've ever made, because you demand greatness from yourself and your footwear.\",\n        \"price\": \"254.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d380ad3-1519-4457-87bb-ef1f88facfe8/ZM+SUPERFLY+10+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d380ad3-1519-4457-87bb-ef1f88facfe8/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/64844709-ce2a-4f18-b889-572f4d6a4887/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81960d0c-9427-497d-a7c9-b8491851e250/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c8def7d-342b-4db3-9d59-31b505f304f5/ZM+SUPERFLY+10+ELITE+FG.png\"\n        ],\n        \"quantity\": 4,\n        \"is_active\": false\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Nike Tiempo Legend 10 Elite\",\n        \"description\": \"Even Legends find ways to evolve. The latest iteration of this Elite boot has all-new FlyTouch Plus engineered leather. Softer than natural leather, it contours to your foot and works with All Conditions Control (a grippy texture even in wet weather) so you can dictate the pace of your game.\",\n        \"price\": \"229.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/df5e52cb-a7ef-402e-b0ff-0ddf5101e0a3/LEGEND+10+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/df5e52cb-a7ef-402e-b0ff-0ddf5101e0a3/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/0e160fe6-3ebf-492e-88bf-5fee89d73bbd/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/fa9043ba-7941-4b74-a258-b06a757c3249/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f38862cc-193c-4d4e-85e0-45c70fbaec83/LEGEND+10+ELITE+FG.png\"\n        ],\n        \"quantity\": 6,\n        \"is_active\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Nike Phantom GX 2 Elite\",\n        \"description\": \"Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch...\",\n        \"price\": \"239.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3b5a1fcd-b8f1-4a1c-90f5-7b59fc52b684/PHANTOM+GX+II+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3b5a1fcd-b8f1-4a1c-90f5-7b59fc52b684/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/7a4352c9-2098-4987-9af4-b4454deb104f/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/16ca1382-1ad7-4747-943e-120367c17bbc/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fce641c3-3afa-4614-a370-dc3bc41a4903/PHANTOM+GX+II+ELITE+FG.png\"\n        ],\n        \"quantity\": 1,\n        \"is_active\": false\n    },\n    {\n        \"id\": 6,\n        \"name\": \"F50+ Firm Ground Cleats\",\n        \"description\": \"Super-lightweight cleats for electric pace, made in part with recycled materials...\",\n        \"price\": \"300.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49bcd74bd70642fca1d68df5bdf6adcc_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49bcd74bd70642fca1d68df5bdf6adcc_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/823f1ba3f44c4db4b6db8a79bfb6453f_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/569160fdc6d8461c8112f899074b8875_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM5.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/d79c039cc6ae4d48b220b530b54b3c7f_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM3.jpg\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Predator Elite Firm Ground Cleats\",\n        \"description\": \"Grippy cleats for pinpoint shooting on firm ground, made in part with recycled materials...\",\n        \"price\": \"280.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ed8700dd4404d45a899a22a25c7db84_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ed8700dd4404d45a899a22a25c7db84_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a64f081af3d74f998dfdc49009128c28_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM3_hover.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/ef053ff0dbd84785b2a3f69509698c26_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM4_hover.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a1c9e3abb724d638efa70312b36cbe2_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM5.jpg\"\n        ],\n        \"quantity\": 3,\n        \"is_active\": false\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Copa Pure 3 Elite Cleats\",\n        \"description\": \"Make a pure soccer connection in laceless cleats built for firm ground...\",\n        \"price\": \"250.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1d4098147e840009d02fc020ae1076f_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1d4098147e840009d02fc020ae1076f_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9380bb8f2d054053a509a35aa07da3f0_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM3.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/24548b5b39194ca2b0dbec6cbe21601e_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bf7ac2e9019243eca03b4d75db0368c9_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM5.jpg\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Predator League Cleats\",\n        \"description\": \"Bold cleats for Jude Bellingham's loyal fans, made in part with recycled materials...\",\n        \"price\": \"110.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8628ae20373f4c69a213bf08835d0449_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8628ae20373f4c69a213bf08835d0449_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/415c0147c8464039bdc26b869a33af50_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM3.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bd1c7e1155634a46b3b15530e563fb45_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/389c86f9014445ae90dd4f76b2ba0f85_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM5.jpg\"\n        ],\n        \"quantity\": 3,\n        \"is_active\": false\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "show_products_byID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Get Product by ID\n\nThis endpoint makes an HTTP GET request to retrieve product details based on the provided ID.\n\n#### Request Parameters\n\n- `id` (query parameter) - The ID of the product to retrieve.\n    \n\n### Request Description\n\n- Method: GET\n    \n- URL: [http://127.0.0.1:8000/api/prodicts/](http://127.0.0.1:8000/api/products/)\n    \n\n### Response\n\n- Status Code: 200\n    \n- Content Type: application/json\n    \n\nExample response:\n\n``` json\n[\n    {\n        \"id\": 0,\n        \"name\": \"\",\n        \"description\": \"\",\n        \"price\": \"\",\n        \"category\": 0,\n        \"main_image\": \"\",\n        \"type_sport\": \"\",\n        \"images\": [\"\"],\n        \"quantity\": 0,\n        \"is_active\": true\n    }\n]\n\n ```"
+					},
+					"response": [
+						{
+							"name": "show_products_byID",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "show_products_byID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 15:00:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1231"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Adizero ZG Spikeless Golf Shoes\",\n    \"description\": \"Spikeless golf shoes made in part with a blend of recycled and renewable materials.\\\\r\\\\nChase your low score with these Adizero ZG Spikeless Golf Shoes from adidas. Lightweight yet packed with tech, they feature ultralight Lightstrike Pro cushioning to support focused play, and a dynamic stability system for confident footing on greens and fairways. The waterproof upper keeps your feet dry in damp conditions.\",\n    \"price\": \"180.00\",\n    \"category\": 2,\n    \"main_image\": \"https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/b9e107f5ef3543a08cf0905c0f769416_9366/adizero-zg-spikeless-golf-shoes.jpg\",\n    \"type_sport\": \"Golf\",\n    \"images\": [\n        \"https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/b9e107f5ef3543a08cf0905c0f769416_9366/adizero-zg-spikeless-golf-shoes.jpg\",\n        \"https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/837ff847e296461d834fdfa2e56bb45e_9366/adizero-zg-spikeless-golf-shoes.jpg\",\n        \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/77166746c0654436a2489a5ee7e97f43_9366/Adizero_ZG_Spikeless_Golf_Shoes_Grey_JI0861_04_standard.jpg\"\n    ],\n    \"quantity\": 4,\n    \"is_active\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "show_products_byCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Get Product by Category\n\nThis endpoint makes an HTTP GET request to retrieve product details based on the provided id of category.\n\n#### Request Parameters\n\n- `id` (query parameter) - The ID of the category to retrieve.\n    \n\n### Request Description\n\n- Method: GET\n    \n- URL: [http://127.0.0.1:8000/api/categories/1/products](http://127.0.0.1:8000/api/products/)\n    \n\n### Response\n\n- Status Code: 200\n    \n- Content Type: application/json"
+					},
+					"response": [
+						{
+							"name": "products_byCategory_sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/categories/1/products",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"1",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 14:05:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9144"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Erling Haaland Boots & Kit\",\n        \"description\": \"Erling Haaland is inevitable. His goal-scoring force of nature inspired the design of these player-edition boots, with supernovas and meteors crashing into the graphics. Combined with sticky NikeSkin technology, the Phantom GX 2 Academy gives you the precision you need to find the back of the net.\",\n        \"price\": \"300.00\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baa3702e-8def-47bc-99f0-bec2f8baa56e/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baa3702e-8def-47bc-99f0-bec2f8baa56e/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/ff06adc9-4e4f-44b0-a308-9c535f55118c/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/6ff07ae0-45a9-40ea-9cce-e429d275df37/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c9ba19c-6eae-4bb5-a306-579c37c963df/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Nike Mercurial Superfly 10 Elite\",\n        \"description\": \"Obsessed with speed? So are the game's biggest stars. That's why we made this Elite boot with an improved 3/4-length Air Zoom unit. It gives you and the sport's fastest players the propulsive feel needed to break through the back line. The result is the most responsive Mercurial we've ever made, because you demand greatness from yourself and your footwear.\",\n        \"price\": \"254.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d380ad3-1519-4457-87bb-ef1f88facfe8/ZM+SUPERFLY+10+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d380ad3-1519-4457-87bb-ef1f88facfe8/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/64844709-ce2a-4f18-b889-572f4d6a4887/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81960d0c-9427-497d-a7c9-b8491851e250/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c8def7d-342b-4db3-9d59-31b505f304f5/ZM+SUPERFLY+10+ELITE+FG.png\"\n        ],\n        \"quantity\": 4,\n        \"is_active\": false\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Nike Tiempo Legend 10 Elite\",\n        \"description\": \"Even Legends find ways to evolve. The latest iteration of this Elite boot has all-new FlyTouch Plus engineered leather. Softer than natural leather, it contours to your foot and works with All Conditions Control (a grippy texture even in wet weather) so you can dictate the pace of your game.\",\n        \"price\": \"229.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/df5e52cb-a7ef-402e-b0ff-0ddf5101e0a3/LEGEND+10+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/df5e52cb-a7ef-402e-b0ff-0ddf5101e0a3/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/0e160fe6-3ebf-492e-88bf-5fee89d73bbd/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/fa9043ba-7941-4b74-a258-b06a757c3249/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f38862cc-193c-4d4e-85e0-45c70fbaec83/LEGEND+10+ELITE+FG.png\"\n        ],\n        \"quantity\": 6,\n        \"is_active\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Nike Phantom GX 2 Elite\",\n        \"description\": \"Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch...\",\n        \"price\": \"239.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3b5a1fcd-b8f1-4a1c-90f5-7b59fc52b684/PHANTOM+GX+II+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3b5a1fcd-b8f1-4a1c-90f5-7b59fc52b684/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/7a4352c9-2098-4987-9af4-b4454deb104f/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/16ca1382-1ad7-4747-943e-120367c17bbc/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fce641c3-3afa-4614-a370-dc3bc41a4903/PHANTOM+GX+II+ELITE+FG.png\"\n        ],\n        \"quantity\": 1,\n        \"is_active\": false\n    },\n    {\n        \"id\": 6,\n        \"name\": \"F50+ Firm Ground Cleats\",\n        \"description\": \"Super-lightweight cleats for electric pace, made in part with recycled materials...\",\n        \"price\": \"300.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49bcd74bd70642fca1d68df5bdf6adcc_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49bcd74bd70642fca1d68df5bdf6adcc_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/823f1ba3f44c4db4b6db8a79bfb6453f_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/569160fdc6d8461c8112f899074b8875_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM5.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/d79c039cc6ae4d48b220b530b54b3c7f_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM3.jpg\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Predator Elite Firm Ground Cleats\",\n        \"description\": \"Grippy cleats for pinpoint shooting on firm ground, made in part with recycled materials...\",\n        \"price\": \"280.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ed8700dd4404d45a899a22a25c7db84_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ed8700dd4404d45a899a22a25c7db84_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a64f081af3d74f998dfdc49009128c28_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM3_hover.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/ef053ff0dbd84785b2a3f69509698c26_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM4_hover.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a1c9e3abb724d638efa70312b36cbe2_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM5.jpg\"\n        ],\n        \"quantity\": 3,\n        \"is_active\": false\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Copa Pure 3 Elite Cleats\",\n        \"description\": \"Make a pure soccer connection in laceless cleats built for firm ground...\",\n        \"price\": \"250.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1d4098147e840009d02fc020ae1076f_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1d4098147e840009d02fc020ae1076f_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9380bb8f2d054053a509a35aa07da3f0_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM3.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/24548b5b39194ca2b0dbec6cbe21601e_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bf7ac2e9019243eca03b4d75db0368c9_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM5.jpg\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Predator League Cleats\",\n        \"description\": \"Bold cleats for Jude Bellingham's loyal fans, made in part with recycled materials...\",\n        \"price\": \"110.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8628ae20373f4c69a213bf08835d0449_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8628ae20373f4c69a213bf08835d0449_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/415c0147c8464039bdc26b869a33af50_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM3.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bd1c7e1155634a46b3b15530e563fb45_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/389c86f9014445ae90dd4f76b2ba0f85_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM5.jpg\"\n        ],\n        \"quantity\": 3,\n        \"is_active\": false\n    }\n]"
+						},
+						{
+							"name": "products_byCategory_sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/categories/1/products",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"1",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 15:01:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9144"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Erling Haaland Boots & Kit\",\n        \"description\": \"Erling Haaland is inevitable. His goal-scoring force of nature inspired the design of these player-edition boots, with supernovas and meteors crashing into the graphics. Combined with sticky NikeSkin technology, the Phantom GX 2 Academy gives you the precision you need to find the back of the net.\",\n        \"price\": \"300.00\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baa3702e-8def-47bc-99f0-bec2f8baa56e/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baa3702e-8def-47bc-99f0-bec2f8baa56e/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/ff06adc9-4e4f-44b0-a308-9c535f55118c/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/6ff07ae0-45a9-40ea-9cce-e429d275df37/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c9ba19c-6eae-4bb5-a306-579c37c963df/PHANTOM+GX+II+ACADEMY+FG%2FMG+EH.png\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Nike Mercurial Superfly 10 Elite\",\n        \"description\": \"Obsessed with speed? So are the game's biggest stars. That's why we made this Elite boot with an improved 3/4-length Air Zoom unit. It gives you and the sport's fastest players the propulsive feel needed to break through the back line. The result is the most responsive Mercurial we've ever made, because you demand greatness from yourself and your footwear.\",\n        \"price\": \"254.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d380ad3-1519-4457-87bb-ef1f88facfe8/ZM+SUPERFLY+10+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d380ad3-1519-4457-87bb-ef1f88facfe8/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/64844709-ce2a-4f18-b889-572f4d6a4887/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81960d0c-9427-497d-a7c9-b8491851e250/ZM+SUPERFLY+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c8def7d-342b-4db3-9d59-31b505f304f5/ZM+SUPERFLY+10+ELITE+FG.png\"\n        ],\n        \"quantity\": 4,\n        \"is_active\": false\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Nike Tiempo Legend 10 Elite\",\n        \"description\": \"Even Legends find ways to evolve. The latest iteration of this Elite boot has all-new FlyTouch Plus engineered leather. Softer than natural leather, it contours to your foot and works with All Conditions Control (a grippy texture even in wet weather) so you can dictate the pace of your game.\",\n        \"price\": \"229.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/df5e52cb-a7ef-402e-b0ff-0ddf5101e0a3/LEGEND+10+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/df5e52cb-a7ef-402e-b0ff-0ddf5101e0a3/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/0e160fe6-3ebf-492e-88bf-5fee89d73bbd/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/fa9043ba-7941-4b74-a258-b06a757c3249/LEGEND+10+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f38862cc-193c-4d4e-85e0-45c70fbaec83/LEGEND+10+ELITE+FG.png\"\n        ],\n        \"quantity\": 6,\n        \"is_active\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Nike Phantom GX 2 Elite\",\n        \"description\": \"Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch...\",\n        \"price\": \"239.99\",\n        \"category\": 1,\n        \"main_image\": \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3b5a1fcd-b8f1-4a1c-90f5-7b59fc52b684/PHANTOM+GX+II+ELITE+FG.png\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3b5a1fcd-b8f1-4a1c-90f5-7b59fc52b684/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/7a4352c9-2098-4987-9af4-b4454deb104f/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/16ca1382-1ad7-4747-943e-120367c17bbc/PHANTOM+GX+II+ELITE+FG.png\",\n            \"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fce641c3-3afa-4614-a370-dc3bc41a4903/PHANTOM+GX+II+ELITE+FG.png\"\n        ],\n        \"quantity\": 1,\n        \"is_active\": false\n    },\n    {\n        \"id\": 6,\n        \"name\": \"F50+ Firm Ground Cleats\",\n        \"description\": \"Super-lightweight cleats for electric pace, made in part with recycled materials...\",\n        \"price\": \"300.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49bcd74bd70642fca1d68df5bdf6adcc_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/49bcd74bd70642fca1d68df5bdf6adcc_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/823f1ba3f44c4db4b6db8a79bfb6453f_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/569160fdc6d8461c8112f899074b8875_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM5.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/d79c039cc6ae4d48b220b530b54b3c7f_9366/F50_Firm_Ground_Cleats_Blue_IE1250_HM3.jpg\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Predator Elite Firm Ground Cleats\",\n        \"description\": \"Grippy cleats for pinpoint shooting on firm ground, made in part with recycled materials...\",\n        \"price\": \"280.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ed8700dd4404d45a899a22a25c7db84_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ed8700dd4404d45a899a22a25c7db84_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a64f081af3d74f998dfdc49009128c28_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM3_hover.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/ef053ff0dbd84785b2a3f69509698c26_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM4_hover.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a1c9e3abb724d638efa70312b36cbe2_9366/Predator_Elite_Fold-Over_Tongue_Firm_Ground_Cleats_White_ID8967_HM5.jpg\"\n        ],\n        \"quantity\": 3,\n        \"is_active\": false\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Copa Pure 3 Elite Cleats\",\n        \"description\": \"Make a pure soccer connection in laceless cleats built for firm ground...\",\n        \"price\": \"250.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1d4098147e840009d02fc020ae1076f_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1d4098147e840009d02fc020ae1076f_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9380bb8f2d054053a509a35aa07da3f0_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM3.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/24548b5b39194ca2b0dbec6cbe21601e_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bf7ac2e9019243eca03b4d75db0368c9_9366/Copa_Pure_3_Elite_Laceless_Firm_Ground_Cleats_Blue_IH0075_HM5.jpg\"\n        ],\n        \"quantity\": 2,\n        \"is_active\": false\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Predator League Cleats\",\n        \"description\": \"Bold cleats for Jude Bellingham's loyal fans, made in part with recycled materials...\",\n        \"price\": \"110.00\",\n        \"category\": 1,\n        \"main_image\": \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8628ae20373f4c69a213bf08835d0449_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM1.jpg\",\n        \"type_sport\": \"Football\",\n        \"images\": [\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8628ae20373f4c69a213bf08835d0449_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM1.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/415c0147c8464039bdc26b869a33af50_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM3.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bd1c7e1155634a46b3b15530e563fb45_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM4.jpg\",\n            \"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/389c86f9014445ae90dd4f76b2ba0f85_9366/Predator_League_JB_Fold-Over_Tongue_Firm-Multi-Ground_Cleats_Silver_JQ2688_HM5.jpg\"\n        ],\n        \"quantity\": 3,\n        \"is_active\": false\n    }\n]"
+						}
+					]
+				}
+			],
+			"description": "Contains retrieval of products endpoints."
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "show_categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Get Categories\n\nThis endpoint makes an HTTP GET request to retrieve a list of categories.\n\n### Request Description\n\n- Method: GET\n    \n- URL: [http://127.0.0.1:8000/api/categories/](http://127.0.0.1:8000/api/products/)\n    \n\n### Response\n\n- Status Code: 200\n    \n- Content Type: application/json\n    \n\n``` json\n[\n  {\n    \"id\": 1,\n    \"name\": \"Football\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Golf\"\n  {\n]\n\n ```"
+					},
+					"response": [
+						{
+							"name": "show_categories_sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/categories/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 15:01:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Football\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Golf\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Volleyball\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Basketball\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "show_categories_byID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Get Category by ID\n\nThis endpoint makes an HTTP GET request to retrieve category details based on the provided ID.\n\n#### Request Parameters\n\n- `id` (query parameter) - The ID of the product to retrieve.\n    \n\n### Request Description\n\n- Method: GET\n    \n- URL: [http://127.0.0.1:8000/api/categories/?id=3](http://127.0.0.1:8000/api/products/)\n    \n\n### Response\n\n- Status Code: 200\n    \n- Content Type: application/json\n    \n\nExample response:\n\n``` json\n{\n    \"id\": 3,\n    \"name\": \"Volleyball\"\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "show_categories_byID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/categories/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 15:01:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"Golf\"\n}"
+						}
+					]
+				}
+			],
+			"description": "Contains category endpoints."
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Register User\n\nThis endpoint allows the client to register a new user.\n\n#### Request Body\n\n- `email` (string) - The email address of the user.\n    \n- `first_name` (string) - The first name of the user.\n    \n- `last_name` (string) - The last name of the user.\n    \n- `password` (string) - The password for the user's account.\n    \n\n#### Response\n\nThe response is a JSON object with the following schema:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"number\"\n    },\n    \"email\": {\n      \"type\": \"string\"\n    },\n    \"first_name\": {\n      \"type\": \"string\"\n    },\n    \"last_name\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```\n\nThe response will include the `id`, `email`, `first_name`, and `last_name` of the newly registered user."
+					},
+					"response": [
+						{
+							"name": "register_user_sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"d@mail.ru\",\r\n    \"first_name\": \"Damir\",\r\n    \"last_name\": \"Smetov\",\r\n    \"password\": 123\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register_user/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register_user",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 14:34:33 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 22,\n    \"email\": \"d@mail.ru\",\n    \"first_name\": \"Damir\",\n    \"last_name\": \"Smetov\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Login User\n\nThis endpoint allows the user to log in by sending a POST request to the specified URL.\n\n### Request Body\n\n- email (string): The email of the user.\n    \n- password (string): The password of the user.\n    \n\n### Response\n\nThe response will be in JSON format with the following schema:\n\n``` json\n{\n    \"token\": \"string\"\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "token_sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"d@mail.ru\",\r\n    \"password\": 123\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login_user/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login_user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 14:36:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "157"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiZXhwIjoxNzQ4OTY1MDAzLCJpYXQiOjE3NDg5NjE0MDN9.sfRsVWjhgDK5ua64FwsxKp14g1RajUcf2UuhgWyV0W8\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get_user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Get User\n\nThis endpoint retrieves user information.\n\n#### Request Body\n\n- Authorization (string, required): The authorization token.\n    \n\n#### Response\n\n- Status: 200 OK\n    \n- Content-Type: application/json\n    \n\n``` json\n{\n    \"id\": 22,\n    \"email\": \"d@mail.ru\",\n    \"first_name\": \"Damir\",\n    \"last_name\": \"Smetov\"\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "login_user_sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiZXhwIjoxNzQ4OTY1MDAzLCJpYXQiOjE3NDg5NjE0MDN9.sfRsVWjhgDK5ua64FwsxKp14g1RajUcf2UuhgWyV0W8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Authorization\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwiZXhwIjoxNzQ4OTY1MDAzLCJpYXQiOjE3NDg5NjE0MDN9.sfRsVWjhgDK5ua64FwsxKp14g1RajUcf2UuhgWyV0W8\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/get_user/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"get_user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 14:44:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, GET"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 22,\n    \"email\": \"d@mail.ru\",\n    \"first_name\": \"Damir\",\n    \"last_name\": \"Smetov\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "# Logout User\n\nThis endpoint is used to log out the user from the system.\n\n**Request Body**\n\n- No request body is required for this endpoint.\n    \n\n**Response**\n\n- Status: 200 OK\n    \n- Content Type: application/json\n    \n\n``` json\n{\n    \"message\": \"User logged out successfully\"\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "logout_user_sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/logout_user/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout_user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 03 Jun 2025 14:48:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.13.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "jwt=\"\"; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged out successfully\"\n}"
+						}
+					]
+				}
+			],
+			"description": "Contains all authentication and user session endpoints. Handles user registration, login, logout, and profile retrieval.EndFragment"
+		}
+	]
+}
