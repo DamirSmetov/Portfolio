@@ -25,9 +25,8 @@ Real-time data interaction using RESTful APIs
 
 🧪 API Testing with Postman  
 Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering key endpoints:
-- Authentication (login, register)
+- Authentication
 - Product and category management
-For further information navigate to "Postman" folder
 
 🛠️ **Tech Stack**
 
