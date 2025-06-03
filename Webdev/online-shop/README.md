@@ -28,7 +28,7 @@ Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering k
 - Authentication
 - Product and category management
 
-  ---
+---
 
 🛠️ **Tech Stack**
 
@@ -38,7 +38,7 @@ Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering k
 
 * API Communication: JSON-based REST APIs
 
-  ---
+---
 
 
 📌 **Highlights**
