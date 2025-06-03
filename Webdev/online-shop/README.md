@@ -23,6 +23,11 @@ Fully optimized for desktop, tablet, and mobile devices
 🔁 Frontend–Backend Integration
 Real-time data interaction using RESTful APIs
 
+🧪 API Testing with Postman  
+Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering key endpoints:
+- Authentication (login, register)
+- Product and category management
+For further information navigate to "Postman" folder
 
 🛠️ **Tech Stack**
 
