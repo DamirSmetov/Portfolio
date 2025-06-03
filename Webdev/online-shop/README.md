@@ -4,7 +4,7 @@
 A powerful, full-featured e-commerce web application developed with Angular, TypeScript, and Django, offering a seamless blend of modern design and functional depth.
 
 
-
+---
 🚀 **Features**
 
 
@@ -28,6 +28,8 @@ Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering k
 - Authentication
 - Product and category management
 
+  ---
+
 🛠️ **Tech Stack**
 
 * Frontend: Angular, TypeScript
@@ -35,6 +37,8 @@ Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering k
 * Backend: Django, Django REST Framework
 
 * API Communication: JSON-based REST APIs
+
+  ---
 
 
 📌 **Highlights**
@@ -44,6 +48,8 @@ Includes (https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq) covering k
 * Emphasis on user experience and performance
 
 * Easily extendable for real-world retail applications
+
+---
 
 
 📸 **Screenshots**
