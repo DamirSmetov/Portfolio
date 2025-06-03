@@ -10,7 +10,7 @@ This folder contains a complete **Postman collection** for testing the API endpo
 ## 🔗 API Documentation
 
 Full interactive API documentation is available:  
-**👉 [View API Docs]([https://your-api-domain.com/api/docs/](https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq))**  
+**👉 [View API Docs](https://documenter.getpostman.com/view/40879403/2sB2qi8Hqq)**  
 
 ---
 
