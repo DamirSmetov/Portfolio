@@ -3,19 +3,53 @@
 ## Project Overview
 
 **Project Title**: Library Management System  
-**Level**: Intermediate  
 **Database**: `library_db`
 
-This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries. The goal is to showcase skills in database design, manipulation, and querying.
+This project demonstrates the implementation of a Library Management System using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries.
 
 ![Library_project](https://github.com/najirh/Library-System-Management---P2/blob/main/library.jpg)
 
-## Objectives
+Here's a revised version of your "Objectives" section that clearly communicates what **SQL/database concepts** your Library Management System project demonstrates:
 
-1. **Set up the Library Management System Database**: Create and populate the database with tables for branches, employees, members, books, issued status, and return status.
-2. **CRUD Operations**: Perform Create, Read, Update, and Delete operations on the data.
-3. **CTAS (Create Table As Select)**: Utilize CTAS to create new tables based on query results.
-4. **Advanced SQL Queries**: Develop complex queries to analyze and retrieve specific data.
+---
+
+## ✅ Project Concepts Demonstrated
+
+1. **Relational Database Design**
+
+   * Modeling real-world entities (branches, employees, members, books, transactions) using relational tables and foreign key relationships.
+
+2. **SQL CRUD Operations**
+
+   * Implementing fundamental operations:
+
+     * **Create** (INSERT new records),
+     * **Read** (SELECT queries),
+     * **Update** (modify existing data),
+     * **Delete** (remove records).
+
+3. **CTAS (Create Table As Select)**
+
+   * Using `CREATE TABLE AS SELECT` to generate derived datasets for reporting, fine calculations, or overdue tracking.
+
+4. **Joins and Relationships**
+
+   * Applying `INNER JOIN`, `LEFT JOIN`, etc., to connect tables and retrieve meaningful combined data across entities.
+
+5. **Filtering and Aggregation**
+
+   * Using `WHERE`, `GROUP BY`, `HAVING`, and `ORDER BY` to perform detailed analysis (e.g., count of overdue books, total fines).
+
+6. **Date and Interval Calculations**
+
+   * Calculating time-based logic such as overdue days and fines using `CURRENT_DATE`, `INTERVAL`, and `EXTRACT`.
+
+7. **Subqueries and Derived Data** *(Optional Extension)*
+
+   * Structuring queries within queries to build more dynamic results like top borrowers or most issued books.
+
+---
+
 
 ## Project Structure
 
