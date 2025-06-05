@@ -44,7 +44,7 @@ Here's a revised version of your "Objectives" section that clearly communicates 
 
    * Calculating time-based logic such as overdue days and fines using `CURRENT_DATE`, `INTERVAL`, and `EXTRACT`.
 
-7. **Subqueries and Derived Data** *(Optional Extension)*
+7. **Subqueries and Derived Data**
 
    * Structuring queries within queries to build more dynamic results like top borrowers or most issued books.
 
