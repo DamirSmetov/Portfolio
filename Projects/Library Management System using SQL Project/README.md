@@ -443,6 +443,21 @@ GROUP BY 1, 2
 **Task 18: Identify Members Issuing High-Risk Books**  
 Write a query to identify members who have issued books more than twice with the status "damaged" in the books table. Display the member name, book title, and the number of times they've issued damaged books.    
 
+```sql
+SELECT
+    m.member_name,
+    ist.issued_book_name,
+    COUNT(*) AS times_damaged
+FROM issued_status AS ist
+JOIN members AS m
+ON ist.issued_member_id = m.member_id
+JOIN return_status AS rs
+ON ist.issued_id = rs.issued_id
+WHERE book_quality = 'Damaged'
+GROUP BY 1, 2
+HAVING COUNT(*) > 2;
+```
+
 
 **Task 19: Stored Procedure**
 Objective:
@@ -521,6 +536,26 @@ Description: Write a CTAS query to create a new table that lists each member and
     Number of overdue books
     Total fines
 
+```sql
+CREATE TABLE overdue_books_fines
+AS
+    SELECT
+        m.member_id,
+        COUNT(ist.issued_id) AS overdue_books,
+        SUM(
+            EXTRACT(DAY FROM CURRENT_DATE - (ist.issued_date + INTERVAL '30 days')) * 0.50
+        ) AS total_fines
+    FROM issued_status AS ist
+    JOIN members AS m
+        ON ist.issued_member_id = m.member_id
+    LEFT JOIN return_status AS rs
+        ON rs.issued_id = ist.issued_id
+    WHERE
+        rs.return_id IS NULL
+        AND CURRENT_DATE > ist.issued_date + INTERVAL '30 days'
+    GROUP BY m.member_id;
+```
+
 
 
 ## Reports
@@ -533,24 +568,4 @@ Description: Write a CTAS query to create a new table that lists each member and
 
 This project demonstrates the application of SQL skills in creating and managing a library management system. It includes database setup, data manipulation, and advanced querying, providing a solid foundation for data management and analysis.
 
-## How to Use
 
-1. **Clone the Repository**: Clone this repository to your local machine.
-   ```sh
-   git clone https://github.com/najirh/Library-System-Management---P2.git
-   ```
-
-2. **Set Up the Database**: Execute the SQL scripts in the `database_setup.sql` file to create and populate the database.
-3. **Run the Queries**: Use the SQL queries in the `analysis_queries.sql` file to perform the analysis.
-4. **Explore and Modify**: Customize the queries as needed to explore different aspects of the data or answer additional questions.
-
-## Author - Zero Analyst
-
-This project showcases SQL skills essential for database management and analysis. For more content on SQL and data analysis, connect with me through the following channels:
-
-- **YouTube**: [Subscribe to my channel for tutorials and insights](https://www.youtube.com/@zero_analyst)
-- **Instagram**: [Follow me for daily tips and updates](https://www.instagram.com/zero_analyst/)
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/najirr)
-- **Discord**: [Join our community for learning and collaboration](https://discord.gg/36h5f2Z5PK)
-
-Thank you for your interest in this project!
