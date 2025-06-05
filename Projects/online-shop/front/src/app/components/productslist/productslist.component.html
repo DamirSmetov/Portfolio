@@ -1,0 +1,27 @@
+<div class="sort" [class.scrolled]="isScrolled">
+  <h1>{{ `${category} (${products.length})` }}</h1>
+  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+    <input
+      type="search"
+      [(ngModel)]="searchText"
+      [ngModelOptions]="{ standalone: true }"
+      class="form-control form-control-dark"
+      placeholder="Search..."
+      aria-label="Search"
+    />
+  </form>
+  <div class="sort-sect">
+    <label for="sort">Sort by:</label>
+    <select id="sort" (change)="onSortChange($event)">
+      <option value="default">Default</option>
+      <option value="priceAsc">Price: Low to High</option>
+      <option value="priceDesc">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+<div class="container">
+  <div class="main_div" *ngFor="let product of products | filter : searchText">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+</div>

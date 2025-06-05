@@ -1,0 +1,66 @@
+<header>
+  <div class="header-container">
+    <div class="left-group">
+      <a routerLink="/home" class="nav-link text-black">
+        <img id="home-logo" src="/logo.png" alt="Logo" />
+      </a>
+      <h2>{{ message }}</h2>
+    </div>
+
+    <ul class="nav nav-links">
+      <li>
+        <a
+          routerLink="/home"
+          class="nav-link"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/', categories[0].name]"
+          class="nav-link"
+          routerLinkActive="active"
+          >Football</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/', categories[1].name]"
+          class="nav-link"
+          routerLinkActive="active"
+          >Golf</a
+        >
+      </li>
+      <li>
+        <a routerLink="/Basketball" class="nav-link" routerLinkActive="active"
+          >Basketball</a
+        >
+      </li>
+      <li>
+        <a routerLink="/Volleyball" class="nav-link" routerLinkActive="active"
+          >Volleyball</a
+        >
+      </li>
+    </ul>
+
+    <div class="auth-buttons" *ngIf="!islogged">
+      <button routerLink="/login" class="btn btn-outline-light me-2 login">
+        Login
+      </button>
+      <button routerLink="/register" class="btn btn-warning Sign-up">
+        Sign-up
+      </button>
+    </div>
+    <div class="auth-buttons" *ngIf="islogged">
+      <button
+        (click)="logout()"
+        routerLink="/home"
+        class="btn btn-warning Sign-up"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</header>

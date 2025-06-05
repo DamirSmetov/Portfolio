@@ -1,0 +1,44 @@
+<div class="register-container">
+  <h2>Register</h2>
+  <form (ngSubmit)="onRegister()">
+    <label for="firstName">First Name:</label>
+    <input
+      type="text"
+      [(ngModel)]="registerData.first_name"
+      [ngModelOptions]="{ standalone: true }"
+      id="firstName"
+      name="firstName"
+      required
+    />
+    <label for="lastname">Last Name:</label>
+    <input
+      type="text"
+      [(ngModel)]="registerData.last_name"
+      [ngModelOptions]="{ standalone: true }"
+      id="lastname"
+      name="lastname"
+      required
+    />
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      [(ngModel)]="registerData.email"
+      [ngModelOptions]="{ standalone: true }"
+      id="email"
+      name="email"
+      required
+    />
+
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      [(ngModel)]="registerData.password"
+      [ngModelOptions]="{ standalone: true }"
+      id="password"
+      name="password"
+      required
+    />
+
+    <button type="submit">Register</button>
+  </form>
+</div>

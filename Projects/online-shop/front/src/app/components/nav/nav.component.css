@@ -1,0 +1,66 @@
+header {
+  border-bottom: 1px solid rgb(218, 220, 222);
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#home-logo {
+  height: 40px;
+  border-radius: 50%;
+}
+
+h2 {
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 2px solid black;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login {
+  color: black;
+}
+
+.Sign-up {
+  background-color: #f7762d;
+  color: white;
+  font-weight: 600;
+}

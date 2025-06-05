@@ -1,0 +1,27 @@
+<div class="register-container">
+  <h2>Welcome!</h2>
+  <form (ngSubmit)="onLogin()">
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      [(ngModel)]="registerData.email"
+      [ngModelOptions]="{ standalone: true }"
+      id="email"
+      name="email"
+      required
+    />
+
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      [(ngModel)]="registerData.password"
+      [ngModelOptions]="{ standalone: true }"
+      id="password"
+      name="password"
+      required
+    />
+
+    <button type="submit">Login</button>
+  </form>
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+</div>

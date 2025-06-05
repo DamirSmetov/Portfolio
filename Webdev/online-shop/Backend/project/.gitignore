@@ -1,8 +1,0 @@
-# Ignore everything by default
-*
-
-# But NOT these (the exclamation mark means "do not ignore")
-!.gitignore
-!README.md
-!Backend/
-!Backend/**
