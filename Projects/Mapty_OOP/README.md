@@ -25,7 +25,8 @@ script.js – Core application logic written in JavaScript using OOP
 
 /images/ – Icons and logos for the UI
 
-Mapty-architecture-final.png – Visual diagram of the app's structure and logic
+[`/uml/`](./uml) - UML files are located
+
 
 ---
 
@@ -38,6 +39,12 @@ Mapty-architecture-final.png – Visual diagram of the app's structure and logic
 * Follows best practices of OOP: encapsulation, inheritance, and method overriding
 
 * Lightweight, responsive, and fully client-side
+* 📐 **UML Documentation*:
+
+  * Class Diagram: Models class structure and relationships
+  * Sequence Diagram: Shows interactions for workout creation and rendering
+  * Architecture Diagram: High-level overview of app modules and data flow
+
 ---
   
 
@@ -45,3 +52,6 @@ Mapty-architecture-final.png – Visual diagram of the app's structure and logic
 
 ![image](https://github.com/user-attachments/assets/0b25e3aa-51d0-440d-bcc0-798f1704ac65)
 ---
+
+
+
