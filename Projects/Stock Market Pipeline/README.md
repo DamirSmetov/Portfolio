@@ -14,7 +14,7 @@ It processes live financial data from Yahoo Finance, streams it through Kafka, t
 
 # 🏗️ Architecture
 
-![Stock Pipeline Architecture](/img/Stock%20Market%20Data%20Architecture.png)
+![Stock Pipeline Architecture](/Projects/Stock%20Market%20Pipeline/img/Stock%20Market%20Data%20Architecture.png)
 
 ---
 
