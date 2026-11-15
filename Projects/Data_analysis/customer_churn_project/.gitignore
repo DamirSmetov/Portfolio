@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Local data and generated artifacts
+data/*.csv
+Dataset.csv
+WA_Fn-UseC_-Telco-Customer-Churn.csv
+Telco-Customer-Churn.csv
+artifacts/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
